@@ -9,8 +9,8 @@
 <body>
     <div id="app">
         <p>Mail nuovi utenti:</p>
-        <ul>
-            <li>{{mailArr}}</li>
+        <ul  v-for="mail in mailArr">
+            <li>{{mail}}</li>
         </ul>
         <span></span>
     </div>
