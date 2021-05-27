@@ -1,7 +1,8 @@
 const app = new Vue ({
     el: '#app',
     data:{
-        randomMail:[],
+        randomMail:'',
+        mailArr:[],
     },
     methods:{
 
@@ -17,6 +18,8 @@ const app = new Vue ({
             .then(response =>{
                 this.randomMail = response.data.response;
                 console.log(this.randomMail);
+                this.mailArr.push(this.randomMail);
+                console.log(this.mailArr);
             })
         }
      
